@@ -21,12 +21,27 @@ public class Main {
                 }
             }
         }
-        URL servicesurl = new URL("http://localhost:8080/App/Hello");
+        urlTest(services);
+    }
+
+    private static void urlTest(Map<String, Method> services) throws MalformedURLException, InvocationTargetException, IllegalAccessException {
+        //1
+        URL servicesurl = new URL("http://localhost:8080/App/Estudiantes");
         String path = servicesurl.getPath();
-        System.out.println(path);
         String servicename = path.substring(4);
-        System.out.println(servicename);
         Method ms  = services.get(servicename);
+        System.out.println(ms.invoke(null, null));
+        //2
+        servicesurl = new URL("http://localhost:8080/App/GetPi");
+        path = servicesurl.getPath();
+        servicename = path.substring(4);
+        ms  = services.get(servicename);
+        System.out.println(ms.invoke(null, null));
+        //3
+        servicesurl = new URL("http://localhost:8080/App/Hello");
+        path = servicesurl.getPath();
+        servicename = path.substring(4);
+        ms  = services.get(servicename);
         System.out.println(ms.invoke(null, null));
     }
 }
