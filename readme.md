@@ -11,7 +11,7 @@ y parámetros HTTP GET a métodos en clases de controlador.
 ### Requisitos
 
 - Java JDK 17 o superior
-- Apache Maven (opcional, para gestionar dependencias)
+- Apache Maven 3.9.6 (opcional, para gestionar dependencias)
 
 ### Instalación
 
