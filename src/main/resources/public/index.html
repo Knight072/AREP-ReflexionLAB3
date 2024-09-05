@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuarios y Archivos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <h1>Lista de Usuarios</h1>
+    <button class="btn" onclick="fetchUsuarios()">Cargar Usuarios</button>
+    <ul id="usuariosList"></ul>
+
+    <h2>Mostrar Archivo</h2>
+    <form id="fileForm" class="form" onsubmit="mostrarArchivo(event)">
+        <label for="archivo">Nombre del archivo:</label>
+        <input type="text" id="archivo" name="archivo" required><br>
+        <button class="btn" type="submit">Mostrar Archivo</button>
+    </form>
+    <div id="contenidoArchivo" class="content"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+
+

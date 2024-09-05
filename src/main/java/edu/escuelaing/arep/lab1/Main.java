@@ -1,4 +1,4 @@
-package edu.escuelaing.arep;
+package edu.escuelaing.arep.lab1;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
