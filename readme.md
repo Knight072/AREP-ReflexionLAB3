@@ -48,7 +48,7 @@ Una vez que ya se haya clonado el proyecto, siga los siguientes pasos para lanza
  ![img_4.png](img_4.png)
 
 
-## Running the tests
+## Correr los tests
 
 Para correr los test usamos el siguiente comando.
 
